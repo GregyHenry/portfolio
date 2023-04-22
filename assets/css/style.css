@@ -115,6 +115,10 @@ h6 {
   height: 40px;
 }
 
+#resume .dwnResume a:hover {
+  background: #8a2be2;
+}
+
 #header .social-links a:hover {
   background: #8a2be2;
 }
@@ -502,6 +506,8 @@ section .container {
   margin-top: 20px;
   margin-bottom: 20px;
   color: #fff;
+  text-align: center;
+  padding-bottom: 2%;
 }
 
 .resume .resume-item {
@@ -554,56 +560,80 @@ section .container {
   border: 2px solid #8a2be2;
 }
 
+.resume .info {
+  display: flex;
+  justify-content: right;
+}
+
+.resume .info i {
+  font-size: 20px;
+  color: #515151;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.resume .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #8a2be2;
+}
+
+.resume .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #555555;
+}
+
+.resume .info a {
+  color: #c0c0c0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.resume .info a:hover {
+  color: #fff;
+}
+
+.resume .info .dwnCV {
+  margin-top: 0.5%;
+}
+
+.resume .info .dwnCV:hover i {
+  background: #8a2be2;
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .resume .info {
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+}
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
   background: rgba(204, 204, 204, 0.1);
-  padding: 80px 20px;
-  transition: all ease-in-out 0.3s;
-}
-
-.services .icon-box .icon {
-  margin: 0 auto;
-  width: 64px;
-  height: 64px;
-  background: #8a2be2;
-  border-radius: 5px;
-  transition: all 0.3s ease-out 0s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  transform-style: preserve-3d;
-}
-
-.services .icon-box .icon i {
-  color: #fff;
-  font-size: 28px;
-}
-
-.services .icon-box .icon::before {
-  position: absolute;
-  content: '';
-  left: -8px;
-  top: -8px;
-  height: 100%;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 5px;
-  transition: all 0.3s ease-out 0s;
-  transform: translateZ(-1px);
+  padding: 2%;
 }
 
 .services .icon-box h4 {
+  margin-top: 1.5%;
+  margin-bottom: 1%;
   font-weight: 700;
-  margin-bottom: 15px;
   font-size: 24px;
-}
-
-.services .icon-box h4 a {
-  color: #fff;
 }
 
 .services .icon-box p {
@@ -612,26 +642,57 @@ section .container {
   margin-bottom: 0;
 }
 
-.services .icon-box:hover {
+.imgPort img {
+  width: 100%;
+  height: 80%;
+}
+
+.col-sm-12 {
+  margin-bottom: 2%;
+  justify-content: center;
+}
+
+.col-sm-12 ul {
+  padding-top: 1.5%;
+  text-align: center;
+  list-style: none;
+}
+
+.col-sm-12 li i {
+  color: #e056fd;
+}
+
+.btnPort button {
+  width: 15%;
+  margin: 0.5%;
   background: #8a2be2;
   border-color: #8a2be2;
 }
 
-.services .icon-box:hover .icon {
-  background: #fff;
+.btnPort button:hover {
+  background: #9370db;
+  border-color: #9370db;
 }
 
-.services .icon-box:hover .icon i {
-  color: #8a2be2;
-}
-
-.services .icon-box:hover .icon::before {
-  background: #e056fd;
-}
-
-.services .icon-box:hover h4 a,
-.services .icon-box:hover p {
+.textBtn button {
   color: #fff;
+  text-decoration: none;
+}
+
+.textBtn button:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 992px) {
+  .btnPort button {
+    width: 45%;
+    margin: 2%;
+  }
+  .services .icon-box h4 {
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -815,8 +876,10 @@ section .container {
 }
 
 .credits a {
-  color: #c0c0c0;
+  color: #9370db;
   transition: 0.3s;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .credits a:hover {
