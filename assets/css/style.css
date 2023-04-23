@@ -432,6 +432,80 @@ section .container {
 }
 
 /*--------------------------------------------------------------
+# Education
+--------------------------------------------------------------*/
+
+.education .content p:last-child {
+  margin-bottom: 0;
+}
+
+.education .titleEducation {
+  margin-top: 40px;
+}
+
+.education .icon-box {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  transition: ease-in-out 0.3s;
+  margin-top: 2%;
+}
+
+.education i {
+  font-size: 32px;
+  padding-right: 10px;
+  line-height: 1;
+  color: #00a8ff;
+}
+
+.education .icon-box h3 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+  color: #fff;
+}
+
+.education .icon-box:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/*--------------------------------------------------------------
+# Certification
+--------------------------------------------------------------*/
+
+.certifications .icon-box {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  transition: ease-in-out 0.3s;
+  margin-top: 2%;
+}
+
+.certifications .icon-box i {
+  font-size: 32px;
+  padding-right: 10px;
+  line-height: 1;
+  color: #ffbb2c;
+}
+
+.certifications .icon-box h3 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+  color: #fff;
+}
+
+.certifications .icon-box:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
 .skills .progress {
